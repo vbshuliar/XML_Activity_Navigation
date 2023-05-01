@@ -10,10 +10,10 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         findViewById<View>(R.id.main_dish_1).setOnClickListener {
-            // Your solution here.
+            IngridientsActivity.start(this, "Hamburger")
         }
         findViewById<View>(R.id.main_dish_2).setOnClickListener {
-            // Your solution here.
+            IngridientsActivity.start(this, "Pasta")
         }
     }
 }
